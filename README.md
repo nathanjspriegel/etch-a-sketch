@@ -19,8 +19,8 @@ A browser-based sketchpad built with HTML, CSS, and JavaScript as part of [The O
 - Supporting touch events for mobile drawing
 - Smoothing out missed hover events during fast mouse movement
 ## Screenshots
-![Grid at default 16x16 size](ss1.png)
-![Grid drawing with random colors](ss2.png)
-![Square darkened to black after repeated hovers](ss3.png)
-![New grid button prompt](ss4.png)
-![Grid drawing at 100x100 size](ss5.png)
+![Grid at default 16x16 size](/Screenshots/ss1.png)
+![Grid drawing with random colors](/Screenshots/ss2.png)
+![Square darkened to black after repeated hovers](/Screenshots/ss3.png)
+![New grid button prompt](/Screenshots/ss4.png)
+![Grid drawing at 100x100 size](/Screenshots/ss5.png)
