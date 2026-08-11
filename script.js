@@ -1,6 +1,8 @@
+const container = document.querySelector(".container");
 const btn = document.createElement("button");
 btn.textContent = "New Grid";
-document.body.appendChild(btn);
+btn.classList.add("btn");
+document.body.insertBefore(btn, container);
 
 btn.addEventListener("click", () => {
     let size = prompt("Enter number of squares per side (max 100):");
@@ -10,17 +12,8 @@ btn.addEventListener("click", () => {
     }
 });
 
-
-
-const container = document.querySelector(".container")
-
-
-
-
-
 function newGrid(size) {
     container.innerHTML = "";
-
 
     for (let i = 0; i < (size * size); i++) {
         const square = document.createElement("div");
@@ -37,12 +30,12 @@ function newGrid(size) {
                 let g = Math.floor(Math.random() * 256);
                 let b = Math.floor(Math.random() * 256);
 
-                square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+                e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
             }
             count++;
             e.target.dataset.count = count;
 
-            let opacity = 1 - (count * 0.1);
+            let opacity = 1 - ((count - 1) / 9);
             e.target.style.opacity = Math.max(opacity, 0);
         });
         container.appendChild(square);
